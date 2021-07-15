@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #1a1a1a;
+}
+h1 {
+  font-family: "PT Sans", sans-serif;
+  font-size: clamp(2rem, 4vw, 5rem);
+  letter-spacing: 0.08em;
+}
+
+h2 {
+  font-family: "PT Sans", sans-serif;
+  font-size: clamp(2rem, 3vw, 4rem);
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  font-family: "PT Sans", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 3rem);
+}
+
+h4 {
+  font-family: "PT Sans", sans-serif;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+h5 {
+  font-family: "PT Sans", sans-serif;
+  font-size: clamp(1rem, 1.3vw, 1.1rem);
+}
+
+p {
+  font-family: "PT Sans", sans-serif;
+  font-size: clamp(1rem, 1.3vw, 1.8rem);
+}
+section {
+  height: 100vh;
+  padding: 0 8%;
+}
+
+.hero-section {
+  /* overflow: hidden; */
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  gap: 3em;
+  grid-template-rows: 1fr;
+}
+
+.hero-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* height: 100%; */
+}
+
+.hero-info-left {
+  margin-top: -5em;
+  max-width: 38vw;
+}
+.hero-education {
+  margin-top: 2em;
+}
+.education-studies {
+  margin-bottom: 1em;
+}
+.education-studies p {
+  font-style: italic;
+}
+
+.hero-info-right {
+  display: flex;
+  position: relative;
+  /* background-color: red; */
+  /* margin-left: 2em; */
+}
+.hero-info-right .circle {
+  /* position: absolute; */
+  position: relative;
+  height: 80vh;
+  width: 80vh;
+  /* margin-left: auto;
+  margin-right: auto; */
+  border-radius: 50%;
+  background: linear-gradient(180deg, #cfcece 10%, #646464 100%);
+  /* transform: rotate(-121deg); */
+}
+
+.hero-info-right img {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(60%);
+  max-width: calc(35vw - 10vh);
+
+  /* width: 70%; */
+}
+
+.blog-section {
+  height: auto;
+  padding-top: 2em;
+  padding-bottom: 3em;
+  background-color: #f0f0f0;
+}
+.blog-post {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.blog-heading {
+  margin-bottom: 0.2em;
+}
+.blog-post-left {
+  /* margin-right: 2em; */
+}
+.blog-post-date-location {
+  display: flex;
+  gap: 2em;
+}
+
+.blog-post-left img {
+  margin: 1em 0;
+  max-width: 100%;
+  /* max-width:%; */
+  border-radius: 0.2em;
+}
+
+.blog-post-right {
+  margin-left: 2em;
+  padding-top: 1.5em;
+}
+.blog-preview-title {
+  margin-bottom: 0.1em;
+}
+.blog-preview-read-more {
+  margin-top: 1em;
+}
