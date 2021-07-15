@@ -22,11 +22,11 @@ const LandingPage = () => {
   }, []);
   console.log(latestBlog);
   return (
-    <Router>
+    <>
       <HeroSection />
       {/* <ProjectSection /> */}
       <BlogSection latestBlog={latestBlog} />
-    </Router>
+    </>
   );
 };
 

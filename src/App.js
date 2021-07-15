@@ -8,9 +8,13 @@ const App = () => {
   return (
     <main>
       <Switch>
-        <Route path="/" component={LandingPage} />
-        <Route exact path="/blog" component={BlogPage} />
-        <Route exact path="/blog:blog-id" component={SingleBlog} />
+        <Route exact path="/">
+          <LandingPage />
+        </Route>
+        <Route exact path="/blog">
+          <BlogPage />
+        </Route>
+        <Route path="/blog/:blogID" children={<SingleBlog />} />
       </Switch>
     </main>
   );

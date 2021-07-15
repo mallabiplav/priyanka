@@ -3,10 +3,16 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 3em 0;
 }
 .hero-section-contact {
   display: flex;
   align-items: center;
+}
+
+.contact + .contact {
+  margin-left: 1.5rem;
+  color: rgb(71, 70, 70);
 }
 /* .hero-section nav {
   } */
@@ -31,4 +37,10 @@ nav ul li a {
 }
 #downloadCV {
   color: white;
+}
+
+.twitterIcon,
+.linkedInIcon {
+  font-size: 1.65em;
+  color: rgb(71, 70, 70);
 }

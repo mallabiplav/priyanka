@@ -6,7 +6,6 @@ const HeroSection = () => {
   return (
     <section className="hero-section">
       <NavigationBar />
-
       <div className="hero-main">
         <div className="hero-info-left">
           <div className="hero-bio">

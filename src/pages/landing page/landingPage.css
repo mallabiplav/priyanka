@@ -1,58 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  color: #1a1a1a;
-}
-h1 {
-  font-family: "PT Sans", sans-serif;
-  font-size: clamp(2rem, 4vw, 5rem);
-  letter-spacing: 0.08em;
-}
-
-h2 {
-  font-family: "PT Sans", sans-serif;
-  font-size: clamp(2rem, 3vw, 4rem);
-  letter-spacing: 0.05em;
-}
-
-h3 {
-  font-family: "PT Sans", sans-serif;
-  font-size: clamp(1rem, 2.5vw, 3rem);
-}
-
-h4 {
-  font-family: "PT Sans", sans-serif;
-  font-size: clamp(1rem, 1.5vw, 2rem);
-}
-
-h5 {
-  font-family: "PT Sans", sans-serif;
-  font-size: clamp(1rem, 1.3vw, 1.1rem);
-}
-
-p {
-  font-family: "PT Sans", sans-serif;
-  font-size: clamp(1rem, 1.3vw, 1.8rem);
-}
 section {
   height: 100vh;
   padding: 0 8%;
 }
 
 .hero-section {
-  /* overflow: hidden; */
+  overflow: hidden;
   background-color: rgb(255, 255, 255);
   display: grid;
   gap: 3em;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .hero-main {
@@ -73,7 +29,7 @@ section {
   margin-bottom: 1em;
 }
 .education-studies p {
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .hero-info-right {
@@ -122,7 +78,8 @@ section {
 }
 .blog-post-date-location {
   display: flex;
-  gap: 2em;
+  /* flex-direction: column; */
+  gap: 1em;
 }
 
 .blog-post-left img {
