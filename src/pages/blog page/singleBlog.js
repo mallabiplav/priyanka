@@ -6,12 +6,15 @@ import { Link, useParams } from "react-router-dom";
 import NavigationBar from "../components/nav.js";
 import moment from "moment";
 import { FaArrowLeft } from "react-icons/fa";
+import { useMediaQuery } from "react-responsive";
 
 const SingleBlog = () => {
   const slug = useParams().blogID;
   const [singleBlog, setSingleBlog] = useState(null);
   const [readMoreList, setReadMoreList] = useState(null);
-
+  const isTablet = useMediaQuery({
+    query: "(max-width: 1200px)",
+  });
   useEffect(() => {
     try {
       sanityClient
@@ -64,21 +67,25 @@ const SingleBlog = () => {
               </div>
             </Link>
           </div>
-          <div className="single-blog-read-more">
-            <h2>Read More</h2>
-            {readMoreList ? (
-              readMoreList.map((post) => {
-                return (
-                  <Link to={`/blog/${post.slug.current}`}>
-                    <h4>{post.title}</h4>
-                    <p>{moment(post.publishedAt).format("MMMM Do YYYY")}</p>
-                  </Link>
-                );
-              })
-            ) : (
-              <></>
-            )}
-          </div>
+          {!isTablet ? (
+            <div className="single-blog-read-more">
+              <h2>Read More</h2>
+              {readMoreList ? (
+                readMoreList.map((post) => {
+                  return (
+                    <Link to={`/blog/${post.slug.current}`}>
+                      <h4>{post.title}</h4>
+                      <p>{moment(post.publishedAt).format("MMMM Do YYYY")}</p>
+                    </Link>
+                  );
+                })
+              ) : (
+                <></>
+              )}
+            </div>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
     </div>

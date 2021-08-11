@@ -9,7 +9,9 @@
   display: flex;
   align-items: center;
 }
-
+.contact {
+  cursor: pointer;
+}
 .contact + .contact {
   margin-left: 1.5rem;
   color: rgb(71, 70, 70);
@@ -43,4 +45,16 @@ nav ul li a {
 .linkedInIcon {
   font-size: 1.65em;
   color: rgb(71, 70, 70);
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-section-top-nav {
+    margin: 2em 0;
+    outline: 1px black solid;
+    outline-offset: 1em;
+  }
+
+  .downloadCV {
+    display: none;
+  }
 }

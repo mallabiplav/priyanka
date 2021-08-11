@@ -10,7 +10,7 @@ const BlogSection = ({ latestBlog }) => {
       <h1 className="blog-heading">Blog</h1>
       <BlogComponent blog={latestBlog} />
 
-      <Link to="/blog">
+      <Link to="/blog" className="go-to-blog">
         <p>Go to Blog...</p>
       </Link>
     </section>

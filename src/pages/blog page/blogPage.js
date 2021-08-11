@@ -22,9 +22,9 @@ const BlogPage = () => {
   // console.log(readMoreList, "!@##");
 
   return (
-    <section>
+    <section className="blog-page-section">
       <NavigationBar className="blog-page-nav" />
-      <h1 className="blog-page-h1">Blog</h1>
+      <h1 className="blog-page-h1">Blogs</h1>
       {blogList ? (
         blogList.map((blog) => <BlogComponent blog={blog} />)
       ) : (

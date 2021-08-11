@@ -1,7 +1,9 @@
+.blog-page-section {
+  padding: 0 8% 5em;
+}
 .single-blog-page {
   padding: 0 8% 5em;
 }
-
 .blog-page-h1 {
   margin: 0.3em 0;
 }
@@ -48,4 +50,24 @@
   display: flex;
   align-items: center;
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .single-blog-page {
+    padding: 0 4% 5em;
+  }
+
+  .single-blog-main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .single-blog-info img {
+    margin: 0;
+    max-width: 100%;
+    max-height: none;
+  }
+  .single-blog-paragraph {
+    margin-right: 0;
+    text-align: justify;
+  }
 }

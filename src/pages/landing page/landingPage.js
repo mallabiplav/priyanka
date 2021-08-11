@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import sanityClient from "../../sanity.js";
 import HeroSection from "./heroSection";
 import BlogSection from "./blogSection";
-import ProjectSection from "./projectSection.js";
 import "./landingPage.css";
 import { BrowserRouter as Router } from "react-router-dom";
+import ProjectSection from "./projectSection.js";
 
 const LandingPage = () => {
   const [latestBlog, setLatestBlog] = useState(null);
@@ -24,7 +24,7 @@ const LandingPage = () => {
   return (
     <>
       <HeroSection />
-      {/* <ProjectSection /> */}
+      <ProjectSection />
       <BlogSection latestBlog={latestBlog} />
     </>
   );
